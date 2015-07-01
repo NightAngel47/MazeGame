@@ -8,8 +8,9 @@ public class Player : MonoBehaviour {
 	public GameObject WinTrigger;
 	public Text winText;
 	public GameObject winTextObj;
+	public GameObject playerObj;
 
-	private int lvlnum = 1;
+	//private int levelNum = 1;
 	private bool checkWin = false;
 	private Rigidbody2D rb2D;
 
@@ -22,11 +23,13 @@ public class Player : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+
 		playerMovement(checkWin);
 
 		if( checkWin == true) {
-			winText.text = "You Completed Level " + lvlnum + "!!!" + "\n" + "Congrats!!!";
+			winText.text = "Exit Found";
 			winTextObj.SetActive(true);
+			//loadNewLevel();
 		}
 	}
 
@@ -54,4 +57,11 @@ public class Player : MonoBehaviour {
 			}
 		}
 	}
+
+	/* private void loadNewLevel() {
+		levelNum++;
+
+		playerObj.transform.position = 
+	}
+	*/
 }
