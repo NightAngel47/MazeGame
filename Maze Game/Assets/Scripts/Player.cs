@@ -7,10 +7,11 @@ public class Player : MonoBehaviour {
 	public float speed = 4f;
 	public GameObject WinTrigger;
 	public Text winText;
+	public Text subWinText;
 	public GameObject winTextObj;
 	public GameObject playerObj;
 
-	//private int levelNum = 1;
+	private int levelNum = 1;
 	private bool checkWin = false;
 	private Rigidbody2D rb2D;
 
@@ -22,14 +23,20 @@ public class Player : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-
+		//moves player while game is active
 		playerMovement(checkWin);
-
+		//if the player reaches the end of the current level then they've beat it and this displays to tell them so
 		if( checkWin == true) {
 			winText.text = "Exit Found";
+			subWinText.text = "(press space to continue)";
 			winTextObj.SetActive(true);
-			//loadNewLevel();
+		}
+		//for the player to continue with the game and go to the next level they have to have reached the end of the current one and press "space"
+		if(checkWin == true && Input.GetKeyDown(KeyCode.Space)){
+			//turns off win text
+			winTextObj.SetActive(false);
+			//moves player to next level
+			nextLevel();
 		}
 	}
 
@@ -41,7 +48,9 @@ public class Player : MonoBehaviour {
 		}
 	}
 
+	//moves player
 	private void playerMovement(bool win) {
+		//while the exit hasn't been found the player can move, but when the exit is found then the player movement stops
 		if(win == false) {
 			if(Input.GetKey(KeyCode.D)) {
 				rb2D.AddForce(Vector2.right * speed);
@@ -58,10 +67,16 @@ public class Player : MonoBehaviour {
 		}
 	}
 
-	/* private void loadNewLevel() {
-		levelNum++;
+	private void nextLevel() {
+		//makes player active false so nothing bad happends while moving player
+		playerObj.SetActive(false);
+		levelNum++; //increases level number so it correctly moves player to the next level
+		checkWin = false; //the player hasn't won the next level so winning is false
 
-		playerObj.transform.position = 
+		if(levelNum == 2) {
+			playerObj.transform.Translate(7, 0, Time.deltaTime); //moves player to level 2 start
+			playerObj.SetActive(true); //makes player active true so they can begin again
+		}
+
 	}
-	*/
 }
