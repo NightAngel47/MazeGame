@@ -4,6 +4,7 @@ using System.Collections;
 public class RotatePath : MonoBehaviour {
 
 	public GameObject rotatingPath;
+	public float speed = 0.25f;
 
 	// Use this for initialization
 	void Start () {
@@ -13,6 +14,6 @@ public class RotatePath : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 	
-		rotatingPath.transform.Rotate(Vector2.right * 4);
+		rotatingPath.transform.Rotate(Vector3.forward * speed);
 	}
 }

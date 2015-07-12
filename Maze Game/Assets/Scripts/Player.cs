@@ -13,6 +13,7 @@ public class Player : MonoBehaviour {
 
 	private int levelNum = 1;
 	private bool checkWin = false;
+	private bool checkAltExit = false;
 	private Rigidbody2D rb2D;
 
 	// Use this for initialization
@@ -24,7 +25,7 @@ public class Player : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		//moves player while game is active
-		playerMovement(checkWin);
+		playerMovement(checkWin, checkAltExit);
 		//if the player reaches the end of the current level then they've beat it and this displays to tell them so
 		if( checkWin == true) {
 			winText.text = "Exit Found";
@@ -38,6 +39,14 @@ public class Player : MonoBehaviour {
 			//moves player to next level
 			nextLevel();
 		}
+
+		//if the player reaches the alternate exit in the beginning
+		if( checkAltExit == true) {
+			winText.text = "Too scary for you?";
+			subWinText.text = "";
+			winTextObj.SetActive(true);
+			
+		}
 	}
 
 	//OnTriggerEnter2D is sent when another object enters a trigger collider attached to this object (2D physics only).
@@ -46,12 +55,16 @@ public class Player : MonoBehaviour {
 		if(other.tag == "Win") {
 			checkWin = true;
 		}
+
+		if(other.tag == "AltExit") {
+			checkAltExit = true;
+		}
 	}
 
 	//moves player
-	private void playerMovement(bool win) {
+	private void playerMovement(bool win, bool altExit) {
 		//while the exit hasn't been found the player can move, but when the exit is found then the player movement stops
-		if(win == false) {
+		if(win == false && altExit == false) {
 			if(Input.GetKey(KeyCode.D)) {
 				rb2D.AddForce(Vector2.right * speed);
 			}
