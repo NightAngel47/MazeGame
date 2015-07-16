@@ -10,10 +10,12 @@ public class Player : MonoBehaviour {
 	public Text subWinText;
 	public GameObject winTextObj;
 	public GameObject playerObj;
+	public GameObject endingPanel;		//Store a reference to the Game Object EndingPanel
 
 	private int levelNum = 1;
 	private bool checkWin = false;
 	private bool checkAltExit = false;
+	private bool checkMazeEnd = false;
 	private Rigidbody2D rb2D;
 
 	// Use this for initialization
@@ -28,7 +30,7 @@ public class Player : MonoBehaviour {
 		playerMovement(checkWin, checkAltExit);
 		//if the player reaches the end of the current level then they've beat it and this displays to tell them so
 		if( checkWin == true) {
-			winText.text = "Exit Found";
+			winText.text = "Door Found";
 			subWinText.text = "(press space to continue)";
 			winTextObj.SetActive(true);
 		}
@@ -45,7 +47,21 @@ public class Player : MonoBehaviour {
 			winText.text = "Too scary for you?";
 			subWinText.text = "";
 			winTextObj.SetActive(true);
-			
+		}
+
+		//if the player reaches the end of the last level then they've beat the game and this displays to tell them so
+		if( checkMazeEnd == true) {
+			winText.text = "Exit Found";
+			subWinText.text = "(press space to continue)";
+			winTextObj.SetActive(true);
+		}
+
+		//for the player to continue with the game and go to the ending they have to have reached the end of the last level and press "space"
+		if(checkMazeEnd == true && Input.GetKeyDown(KeyCode.Space)){
+			//turns off win text
+			winTextObj.SetActive(false);
+			//displays the ending credits and thanks player for playing and yeah other stuff...
+			endingPanel.SetActive(true);
 		}
 	}
 
@@ -55,9 +71,13 @@ public class Player : MonoBehaviour {
 		if(other.tag == "Win") {
 			checkWin = true;
 		}
-
+		//Checks to see if the player leaves the game using level 1's alternate exit
 		if(other.tag == "AltExit") {
 			checkAltExit = true;
+		}
+
+		if(other.tag == "MazeEnd") {
+			checkMazeEnd = true;
 		}
 	}
 
@@ -65,16 +85,16 @@ public class Player : MonoBehaviour {
 	private void playerMovement(bool win, bool altExit) {
 		//while the exit hasn't been found the player can move, but when the exit is found then the player movement stops
 		if(win == false && altExit == false) {
-			if(Input.GetKey(KeyCode.D)) {
+			if(Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) {
 				rb2D.AddForce(Vector2.right * speed);
 			}
-			if(Input.GetKey(KeyCode.A)) {
+			if(Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow)) {
 				rb2D.AddForce(Vector2.left * speed);
 			}
-			if(Input.GetKey(KeyCode.W)) {
+			if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow)) {
 				rb2D.AddForce(Vector2.up * speed);
 			}
-			if(Input.GetKey(KeyCode.S)) {
+			if(Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow)) {
 				rb2D.AddForce(Vector2.down * speed);
 			}
 		}

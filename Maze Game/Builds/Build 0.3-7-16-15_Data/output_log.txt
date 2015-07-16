@@ -1,0 +1,44 @@
+Mono path[0] = 'C:/Users/Steven/Documents/GitHub/MazeGame/Maze Game/Builds/Build 0.3-7-16-15_Data/Managed'
+Mono path[1] = 'C:/Users/Steven/Documents/GitHub/MazeGame/Maze Game/Builds/Build 0.3-7-16-15_Data/Mono'
+Mono config path = 'C:/Users/Steven/Documents/GitHub/MazeGame/Maze Game/Builds/Build 0.3-7-16-15_Data/Mono/etc'
+PlayerConnection initialized from C:/Users/Steven/Documents/GitHub/MazeGame/Maze Game/Builds/Build 0.3-7-16-15_Data (debug = 0)
+PlayerConnection initialized network socket : 0.0.0.0 55109
+Multi-casting "[IP] 192.168.1.20 [Port] 55109 [Flags] 2 [Guid] 1371359979 [EditorId] 1978427958 [Version] 1048832 [Id] WindowsPlayer(Steven-Basement) [Debug] 0" to [225.0.0.222:54997]...
+PlayerConnection already initialized - listening to [192.168.1.20:55109]
+Initialize engine version: 5.1.2f1 (afd2369b692a)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 660   (ID=0x11c0)
+    Vendor:   NVIDIA
+    VRAM:     1989 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Steven\Documents\GitHub\MazeGame\Maze Game\Builds\Build 0.3-7-16-15_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Steven\Documents\GitHub\MazeGame\Maze Game\Builds\Build 0.3-7-16-15_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Steven\Documents\GitHub\MazeGame\Maze Game\Builds\Build 0.3-7-16-15_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Steven\Documents\GitHub\MazeGame\Maze Game\Builds\Build 0.3-7-16-15_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Steven\Documents\GitHub\MazeGame\Maze Game\Builds\Build 0.3-7-16-15_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Steven\Documents\GitHub\MazeGame\Maze Game\Builds\Build 0.3-7-16-15_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Steven\Documents\GitHub\MazeGame\Maze Game\Builds\Build 0.3-7-16-15_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Steven\Documents\GitHub\MazeGame\Maze Game\Builds\Build 0.3-7-16-15_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Steven\Documents\GitHub\MazeGame\Maze Game\Builds\Build 0.3-7-16-15_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Steven\Documents\GitHub\MazeGame\Maze Game\Builds\Build 0.3-7-16-15_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+Platform assembly: C:\Users\Steven\Documents\GitHub\MazeGame\Maze Game\Builds\Build 0.3-7-16-15_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Steven\Documents\GitHub\MazeGame\Maze Game\Builds\Build 0.3-7-16-15_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Steven\Documents\GitHub\MazeGame\Maze Game\Builds\Build 0.3-7-16-15_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Steven\Documents\GitHub\MazeGame\Maze Game\Builds\Build 0.3-7-16-15_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.087 seconds
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\Steven\Documents\GitHub\MazeGame\Maze Game\Builds\Build 0.3-7-16-15_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Steven\Documents\GitHub\MazeGame\Maze Game\Builds\Build 0.3-7-16-15_Data\Managed\System.dll (this message is harmless)
+Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 5.685395 ms
+System memory in use before: 24.4 MB.
+System memory in use after: 24.4 MB.
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 1024.
+Total: 0.877375 ms (FindLiveObjects: 0.078378 ms CreateObjectMapping: 0.068142 ms MarkObjects: 0.701023 ms  DeleteObjects: 0.009943 ms)
+

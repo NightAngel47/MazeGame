@@ -7,7 +7,7 @@ public class ShowPanels : MonoBehaviour {
 	public GameObject optionsTint;							//Store a reference to the Game Object OptionsTint 
 	public GameObject menuPanel;							//Store a reference to the Game Object MenuPanel 
 	public GameObject pausePanel;							//Store a reference to the Game Object PausePanel 
-	public GameObject creditsPanel;
+	public GameObject creditsPanel;							//Store a reference to the Game Object CreditsPanel
 
 
 	//Call this function to activate and display the Options panel during the main menu
