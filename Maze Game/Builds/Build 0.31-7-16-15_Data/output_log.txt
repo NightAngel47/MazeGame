@@ -2,12 +2,12 @@ Mono path[0] = 'C:/Users/Steven/Documents/GitHub/MazeGame/Maze Game/Builds/Build
 Mono path[1] = 'C:/Users/Steven/Documents/GitHub/MazeGame/Maze Game/Builds/Build 0.31-7-16-15_Data/Mono'
 Mono config path = 'C:/Users/Steven/Documents/GitHub/MazeGame/Maze Game/Builds/Build 0.31-7-16-15_Data/Mono/etc'
 PlayerConnection initialized from C:/Users/Steven/Documents/GitHub/MazeGame/Maze Game/Builds/Build 0.31-7-16-15_Data (debug = 0)
-PlayerConnection initialized network socket : 0.0.0.0 55297
-Multi-casting "[IP] 192.168.1.20 [Port] 55297 [Flags] 3 [Guid] 1144437558 [EditorId] 1978427958 [Version] 1048832 [Id] WindowsPlayer(Steven-Basement) [Debug] 1" to [225.0.0.222:54997]...
-Waiting for connection from host on [192.168.1.20:55297]...
-PlayerConnection accepted from [192.168.1.20] handle:0x1d8
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,defer=y,address=0.0.0.0:56558
-PlayerConnection already initialized - listening to [192.168.1.20:55297]
+PlayerConnection initialized network socket : 0.0.0.0 55477
+Multi-casting "[IP] 192.168.1.20 [Port] 55477 [Flags] 3 [Guid] 578633065 [EditorId] 1978427958 [Version] 1048832 [Id] WindowsPlayer(Steven-Basement) [Debug] 1" to [225.0.0.222:54997]...
+Waiting for connection from host on [192.168.1.20:55477]...
+Timed out. Continuing without host connection.
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,defer=y,address=0.0.0.0:56065
+PlayerConnection already initialized - listening to [192.168.1.20:55477]
 Initialize engine version: 5.1.2f1 (afd2369b692a)
 GfxDevice: creating device client; threaded=1
 Direct3D:
@@ -30,19 +30,7 @@ Platform assembly: C:\Users\Steven\Documents\GitHub\MazeGame\Maze Game\Builds\Bu
 Loading C:\Users\Steven\Documents\GitHub\MazeGame\Maze Game\Builds\Build 0.31-7-16-15_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Platform assembly: C:\Users\Steven\Documents\GitHub\MazeGame\Maze Game\Builds\Build 0.31-7-16-15_Data\Managed\UnityEngine.UI.dll (this message is harmless)
 Loading C:\Users\Steven\Documents\GitHub\MazeGame\Maze Game\Builds\Build 0.31-7-16-15_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-- Completed reload, in  0.058 seconds
+- Completed reload, in  0.039 seconds
 desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
 <RI> Initializing input.
 <RI> Input initialized.
-<RI> Initialized touch support.
-Platform assembly: C:\Users\Steven\Documents\GitHub\MazeGame\Maze Game\Builds\Build 0.31-7-16-15_Data\Managed\System.Core.dll (this message is harmless)
-Platform assembly: C:\Users\Steven\Documents\GitHub\MazeGame\Maze Game\Builds\Build 0.31-7-16-15_Data\Managed\System.dll (this message is harmless)
-Unloading 3 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 3.681469 ms
-System memory in use before: 24.4 MB.
-System memory in use after: 22.0 MB.
-
-Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 1052.
-Total: 1.132107 ms (FindLiveObjects: 0.374639 ms CreateObjectMapping: 0.056736 ms MarkObjects: 0.683768 ms  DeleteObjects: 0.007311 ms)
-
-Waiting for finish
