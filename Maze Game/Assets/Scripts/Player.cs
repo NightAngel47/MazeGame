@@ -9,6 +9,7 @@ public class Player : MonoBehaviour {
 	public Text winText;
 	public Text subWinText;
 	public GameObject winTextObj;
+	public GameObject startTextObj;
 	public GameObject playerObj;
 	public GameObject endingPanel;		//Store a reference to the Game Object EndingPanel
 
@@ -16,18 +17,30 @@ public class Player : MonoBehaviour {
 	private bool checkWin = false;
 	private bool checkAltExit = false;
 	private bool checkMazeEnd = false;
+	private bool checkStart = false;
 	private Rigidbody2D rb2D;
 
 	// Use this for initialization
 	void Awake () {
 		rb2D = GetComponent<Rigidbody2D>();
-		winTextObj.SetActive(false);
+		checkStart = true;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		//moves player while game is active
-		playerMovement(checkWin, checkAltExit);
+		playerMovement(checkWin, checkAltExit, checkStart);
+
+		//displays starting text
+		if(checkStart == true) {
+			startTextObj.SetActive(true);
+		}
+		//hides starting text once player is ready to start
+		if(checkStart == true && Input.GetKeyDown(KeyCode.Space)){
+			startTextObj.SetActive(false);
+			checkStart = false;
+		}
+
 		//if the player reaches the end of the current level then they've beat it and this displays to tell them so
 		if( checkWin == true) {
 			winText.text = "Door Found";
@@ -45,7 +58,7 @@ public class Player : MonoBehaviour {
 		//if the player reaches the alternate exit in the beginning
 		if( checkAltExit == true) {
 			winText.text = "Too scary for you?";
-			subWinText.text = "";
+			subWinText.text = "(press space to continue)";
 			winTextObj.SetActive(true);
 		}
 
@@ -63,11 +76,19 @@ public class Player : MonoBehaviour {
 			//displays the ending credits and thanks player for playing and yeah other stuff...
 			endingPanel.SetActive(true);
 		}
+
+		//for the player to continue with the game and go to the ending they have to have reached the alt end on the 1st level and press "space"
+		if(checkAltExit == true && Input.GetKeyDown(KeyCode.Space)){
+			//turns off win text
+			winTextObj.SetActive(false);
+			//displays the ending credits and thanks player for playing and yeah other stuff...
+			endingPanel.SetActive(true);
+		}
 	}
 
 	//OnTriggerEnter2D is sent when another object enters a trigger collider attached to this object (2D physics only).
 	private void OnTriggerEnter2D (Collider2D other) {
-		//Check if the tag of the trigger collided with is Exit.
+		//Check if the tag of the trigger collided with is the Door.
 		if(other.tag == "Win") {
 			checkWin = true;
 		}
@@ -75,16 +96,16 @@ public class Player : MonoBehaviour {
 		if(other.tag == "AltExit") {
 			checkAltExit = true;
 		}
-
+		//Check if the tag of the trigger collided with is the End of the game.
 		if(other.tag == "MazeEnd") {
 			checkMazeEnd = true;
 		}
 	}
 
 	//moves player
-	private void playerMovement(bool win, bool altExit) {
+	private void playerMovement(bool win, bool altExit, bool start) {
 		//while the exit hasn't been found the player can move, but when the exit is found then the player movement stops
-		if(win == false && altExit == false) {
+		if(win == false && altExit == false && start == false) {
 			if(Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) {
 				rb2D.AddForce(Vector2.right * speed);
 			}

@@ -1,0 +1,407 @@
+fileFormatVersion: 2
+guid: d1f0e3c4655d6d942a5c751610a00a49
+timeCreated: 1437787940
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Paths Sheet_0
+    21300002: Paths Sheet_1
+    21300004: Paths Sheet_2
+    21300006: Paths Sheet_3
+    21300008: Paths Sheet_4
+    21300010: Paths Sheet_5
+    21300012: Paths Sheet_6
+    21300014: Paths Sheet_7
+    21300016: Paths Sheet_8
+    21300018: Paths Sheet_9
+    21300020: Paths Sheet_10
+    21300022: Paths Sheet_11
+    21300024: Paths Sheet_12
+    21300026: Paths Sheet_13
+    21300028: Paths Sheet_14
+    21300030: Paths Sheet_15
+    21300032: Paths Sheet_16
+    21300034: Paths Sheet_17
+    21300036: Paths Sheet_18
+    21300038: Paths Sheet_19
+    21300040: Paths Sheet_20
+    21300042: Paths Sheet_21
+    21300044: Paths Sheet_22
+    21300046: Paths Sheet_23
+    21300048: Paths Sheet_24
+    21300050: Paths Sheet_25
+    21300052: Paths Sheet_26
+    21300054: Paths Sheet_27
+    21300056: Paths Sheet_28
+    21300058: Paths Sheet_29
+    21300060: Paths Sheet_36
+    21300062: Paths Sheet_30
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 32
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Paths Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 988
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Paths Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 988
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Paths Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 988
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Paths Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 988
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Paths Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 988
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Paths Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 988
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Paths Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 988
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Paths Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 988
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Paths Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 988
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Paths Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 988
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Paths Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 364
+        y: 988
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Paths Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 988
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Paths Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 436
+        y: 988
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Paths Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 988
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Paths Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 988
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Paths Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 989
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Paths Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 989
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Paths Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 616
+        y: 989
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Paths Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 989
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Paths Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 989
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Paths Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 724
+        y: 989
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Paths Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 989
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Paths Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 989
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Paths Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 988
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Paths Sheet_24
+      rect:
+        serializedVersion: 2
+        x: 868
+        y: 988
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Paths Sheet_25
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 952
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Paths Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 952
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Paths Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 952
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Paths Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 952
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Paths Sheet_29
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 952
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Paths Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 956
+        y: 0
+        width: 68
+        height: 30
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Paths Sheet_30
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 952
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
