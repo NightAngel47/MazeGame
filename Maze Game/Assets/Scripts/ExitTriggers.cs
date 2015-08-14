@@ -3,19 +3,20 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class ExitTriggers : MonoBehaviour {
-
-	public GameObject WinTrigger;
+	
 	public Text winText;
 	public Text subWinText;
 	public GameObject winTextObj;
 	public GameObject playerObj;
-	public GameObject endingPanel;		//Store a reference to the Game Object EndingPanel
+	public GameObject endingPanel;		//Store a reference to the Game Object 
 	[HideInInspector]
 	public bool checkWin = false;
 	[HideInInspector]
 	public bool checkAltExit = false;
 	[HideInInspector]
 	public bool checkMazeEnd = false;
+	[HideInInspector]
+	public bool checkVoidDeath = false;
 	
 	private int levelNum = 1;
 	
@@ -25,6 +26,7 @@ public class ExitTriggers : MonoBehaviour {
 		checkWinFunc();
 		checkMazeEndFunc();
 		checkAltExiteFunc();
+		checkVoidDeathFunc();
 	}
 	
 	//OnTriggerEnter2D is sent when another object enters a trigger collider attached to this object (2D physics only).
@@ -40,6 +42,9 @@ public class ExitTriggers : MonoBehaviour {
 		//Check if the tag of the trigger collided with is the End of the game.
 		if(other.tag == "MazeEnd") {
 			checkMazeEnd = true;
+		}
+		if(other.tag == "Void") {
+			checkVoidDeath = true;
 		}
 	}
 
@@ -71,6 +76,24 @@ public class ExitTriggers : MonoBehaviour {
 		
 		//for the player to continue with the game and go to the ending they have to have reached the end of the last level and press "space"
 		if(checkMazeEnd == true && Input.GetKeyDown(KeyCode.Space)){
+			//turns off win text
+			winTextObj.SetActive(false);
+			//displays the ending credits and thanks player for playing and yeah other stuff...
+			endingPanel.SetActive(true);
+		}
+	}
+
+	private void checkVoidDeathFunc() {
+		
+		//if the player falls into the void show them this message
+		if( checkVoidDeath == true) {
+			winText.text = "You fell to you're death.";
+			subWinText.text = "(press space to continue)";
+			winTextObj.SetActive(true);
+		}
+		
+		//for the player to continue with the game and go to the ending they have to fall and die and press "space"
+		if(checkVoidDeath == true && Input.GetKeyDown(KeyCode.Space)){
 			//turns off win text
 			winTextObj.SetActive(false);
 			//displays the ending credits and thanks player for playing and yeah other stuff...

@@ -28,13 +28,13 @@ public class PlayerMovement : MonoBehaviour {
 
 	void FixedUpdate() {
 		//moves player while game is active and player is not doing something else
-		playerMovement(exitTriggers.checkWin, exitTriggers.checkAltExit, startText.checkStart, isreading);
+		playerMovement(exitTriggers.checkWin, exitTriggers.checkAltExit, startText.checkStart, isreading, exitTriggers.checkVoidDeath);
 	}
 
 	//moves player if they aren't doing something else
-	private void playerMovement(bool win, bool altExit, bool start, bool readingNote) {
+	private void playerMovement(bool win, bool altExit, bool start, bool readingNote, bool voidDeath) {
 		//while the exit hasn't been found the player can move, but when the exit is found then the player movement stops
-		if(win == false && altExit == false && start == false && readingNote == false) {
+		if(win == false && altExit == false && start == false && readingNote == false && voidDeath == false) {
 			if(Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow)) {
 				rb2D.AddForce(Vector2.right * speed);
 			}
