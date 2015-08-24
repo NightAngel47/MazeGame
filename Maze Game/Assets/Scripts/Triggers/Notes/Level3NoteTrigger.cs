@@ -19,7 +19,7 @@ public class Level3NoteTrigger : MonoBehaviour {
 
 	//OnTriggerEnter2D is sent when another object enters a trigger collider attached to this object (2D physics only).
 	private void OnTriggerEnter2D (Collider2D other) {
-		//if the player finds the note on level 1 then show it
+		//if the player finds the note on level 3 then show it
 		if(other.tag == "Level3Note") {
 			showLevel3Note();
 		}
