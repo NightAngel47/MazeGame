@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour {
 	//note and text classes
 	private StartingText startText;
 	private Level1NoteTrigger L1NT;
+	private Level2NoteTrigger L2NT;
 	private Level3NoteTrigger L3NT;
 	private Level4Note L4NT;
 	private Level5Note L5NT;
@@ -27,6 +28,7 @@ public class PlayerMovement : MonoBehaviour {
 		//note and text classes
 		startText = GetComponent<StartingText>();
 		L1NT = GetComponent<Level1NoteTrigger>();
+		L2NT = GetComponent<Level2NoteTrigger>();
 		L3NT = GetComponent<Level3NoteTrigger>();
 		L4NT = GetComponent<Level4Note>();
 		L5NT = GetComponent<Level5Note>();
@@ -41,7 +43,7 @@ public class PlayerMovement : MonoBehaviour {
 	// Update is called once per frame
 	void Update() {
 		//check for reading
-		reading(L1NT.isReadingNote, L3NT.isReadingNote, L4NT.isReadingNote, L5NT.isReadingNote);
+		reading(L1NT.isReadingNote, L2NT.isReadingNote, L3NT.isReadingNote, L4NT.isReadingNote, L5NT.isReadingNote);
 	}
 
 	void FixedUpdate() {
@@ -72,13 +74,13 @@ public class PlayerMovement : MonoBehaviour {
 		}
 	}
 	//check for reading function
-	private void reading(bool l1NT, bool l3NT, bool l4NT, bool l5NT) {
+	private void reading(bool l1NT, bool l2NT, bool l3NT, bool l4NT, bool l5NT) {
 		//checks if reading note is going
-		if(l1NT == true || l3NT == true || l4NT == true || l5NT == true) {
+		if(l1NT == true || l2NT == true || l3NT == true || l4NT == true || l5NT == true) {
 			isreading = true;
 		}
 		//checks if reading note is done
-		if(l1NT == false || l3NT == false || l4NT == false || l5NT == false) {
+		if(l1NT == false || l2NT == true || l3NT == false || l4NT == false || l5NT == false) {
 			isreading = false;
 		}
 	}

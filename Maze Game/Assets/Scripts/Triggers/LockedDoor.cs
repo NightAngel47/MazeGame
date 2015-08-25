@@ -47,7 +47,7 @@ public class LockedDoor : MonoBehaviour {
 			//turns off win text
 			exitTriggers.winTextObj.SetActive(false);
 			exitTriggers.hasKey = false;
-			exitTriggers.nextLevel();
+			exitTriggers.loadNextLevel();
 		}
 		//for the player to continue with the game and go to the ending they have to have reached the alt end on the 1st level and press "space"
 		if(checkLockedDoor == true && Input.GetKeyDown(KeyCode.Space) && exitTriggers.hasKey == false){

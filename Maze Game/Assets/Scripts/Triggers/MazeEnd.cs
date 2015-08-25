@@ -44,6 +44,8 @@ public class MazeEnd : MonoBehaviour {
 			exitTriggers.hasKey = false;
 			//displays the ending credits and thanks player for playing and yeah other stuff...
 			exitTriggers.endingPanel.SetActive(true);
+			exitTriggers.level5.SetActive(false);
+
 		}
 	}
 }

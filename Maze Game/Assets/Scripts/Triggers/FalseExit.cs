@@ -6,12 +6,10 @@ public class FalseExit : MonoBehaviour {
 	
 	[HideInInspector]
 	public bool checkFalseExit = false;
-
-	private ExitTriggers exitTriggers;
+	public GameObject falseExitText;
 
 	// Use this for initialization
 	void Awake () {
-		exitTriggers = GetComponent<ExitTriggers>();
 	}
 	
 	// Update is called once per frame
@@ -32,15 +30,13 @@ public class FalseExit : MonoBehaviour {
 		
 		//if the player reaches the alternate exit in the beginning
 		if(checkFalseExit == true) {
-			exitTriggers.winText.text = "Sweet the exit! Oh wait..." + "\n" + "it's just a flase door... fucking assholes.";
-			exitTriggers.subWinText.text = "(press space to continue)";
-			exitTriggers.winTextObj.SetActive(true);
+			falseExitText.SetActive(true);
 		}
 		
 		//for the player to continue with the game and go to the ending they have to have reached the alt end on the 1st level and press "space"
 		if(checkFalseExit == true && Input.GetKeyDown(KeyCode.Space)){
 			//turns off win text
-			exitTriggers.winTextObj.SetActive(false);
+			falseExitText.SetActive(false);
 			checkFalseExit = false;
 			
 		}

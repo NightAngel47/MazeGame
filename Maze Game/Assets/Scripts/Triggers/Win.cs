@@ -41,7 +41,7 @@ public class Win : MonoBehaviour {
 			//turns off win text
 			exitTriggers.winTextObj.SetActive(false);
 			//moves player to next level
-			exitTriggers.nextLevel();
+			exitTriggers.loadNextLevel();
 		}
 	}
 
