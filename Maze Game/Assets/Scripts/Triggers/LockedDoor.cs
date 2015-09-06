@@ -32,24 +32,24 @@ public class LockedDoor : MonoBehaviour {
 		
 		//if the player reaches the alternate exit in the beginning
 		if(checkLockedDoor == true && exitTriggers.hasKey == true) {
-			exitTriggers.winText.text = "You've unlocked the door with your key.";
+			exitTriggers.winText.text = "You've unlocked the door" + "\n" + "with your key.";
 			exitTriggers.subWinText.text = "(press space to continue)";
 			exitTriggers.winTextObj.SetActive(true);
 		}
 		else if(checkLockedDoor == true && exitTriggers.hasKey == false) {
-			exitTriggers.winText.text = "Hmm, it's locked. Looks like I'll need a key.";
+			exitTriggers.winText.text = "Hmm, it's locked." + "\n" + "Looks like I'll need a key.";
 			exitTriggers.subWinText.text = "(press space to continue)";
 			exitTriggers.winTextObj.SetActive(true);
 		}
 		
-		//for the player to continue with the game and go to the ending they have to have reached the alt end on the 1st level and press "space"
+		//for the player to continue with the game and they have the key to continue on
 		if(checkLockedDoor == true && Input.GetKeyDown(KeyCode.Space) && exitTriggers.hasKey == true){
 			//turns off win text
 			exitTriggers.winTextObj.SetActive(false);
 			exitTriggers.hasKey = false;
 			exitTriggers.loadNextLevel();
 		}
-		//for the player to continue with the game and go to the ending they have to have reached the alt end on the 1st level and press "space"
+		//for the player to continue with the game they have to find the key
 		if(checkLockedDoor == true && Input.GetKeyDown(KeyCode.Space) && exitTriggers.hasKey == false){
 			//turns off win text
 			exitTriggers.winTextObj.SetActive(false);
